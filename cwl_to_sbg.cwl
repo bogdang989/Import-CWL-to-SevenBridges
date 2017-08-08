@@ -42,17 +42,6 @@ inputs:
       If CWL inputs file is provided, all files required for task execution
       shall be uploaded to the platform and a draft task shall be created.
     secondaryFiles: []
-  - type: string?
-    id: platform
-    inputBinding:
-      position: 6
-      prefix: '--platform'
-      shellQuote: false
-    label: Platform you are using
-    doc: >-
-      You can use various Seven Bridges based platform: [cgc, cavatica, igor,
-      gcp].
-    secondaryFiles: []
   - type: boolean?
     id: run_task
     inputBinding:

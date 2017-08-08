@@ -6,6 +6,5 @@ project_id: bogdang/ga4gh-project-name # You can get it from the project url (e.
 cwl_inputs: # (Optional) Path to file describing tool inputs. If this is set, the tool will upload input files to the platform and create a draft task. 
   class: File
   path: /path/to/main-workflow-inputs.json # or yaml
-platform: cgc # cgc,igor or cavatica (for platforms cgc.sbgenomics.com, igor.sbgenomics.com, cavatica.sbgenomics.com)
 run_task: true # Run the draft task if cwl_inputs are provided
 aws_instance_type: c4.8xlarge # Select aws instance type (More info http://www.ec2instances.info/; insert value from API Name column)
