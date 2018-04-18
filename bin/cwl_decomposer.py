@@ -12,7 +12,7 @@ Options:
 
     -t STR                        Developer token.
 
-    -p STR                        Platform (igor, cgc or gcp). [default: igor]
+    -p STR                        Platform (igor, cgc or cavatica). [default: igor]
 
     -a STR...                     Workflow's app id (user-name/project-name/app-name[/rev_no])
 """
@@ -34,8 +34,8 @@ def init_api(dev_token, platform):
     elif platform == 'cgc':
         api = sbg.Api(url="https://cgc-api.sbgenomics.com/v2", token=dev_token,
                       error_handlers=[rate_limit_sleeper, maintenance_sleeper, general_error_sleeper])
-    elif platform == 'gcp':
-        api = sbg.Api(url="https://gcp-api.sbgenomics.com/v2", token=dev_token,
+    elif platform == 'cavatica':
+        api = sbg.Api(url="https://cavatica-api.sbgenomics.com/v2", token=dev_token,
                       error_handlers=[rate_limit_sleeper, maintenance_sleeper, general_error_sleeper])
     else:
         raise ValueError('Platform not defined')

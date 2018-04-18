@@ -128,7 +128,6 @@ def init_api(dev_token):
     """Initialize api for the platform used"""
     platforms = {'igor': "https://api.sbgenomics.com/v2",
                  'cgc': "https://cgc-api.sbgenomics.com/v2",
-                 'gcp': "https://gcp-api.sbgenomics.com/v2",
                  'cavatica': "https://cavatica-api.sbgenomics.com/v2"}
     for p in platforms:
         try:
